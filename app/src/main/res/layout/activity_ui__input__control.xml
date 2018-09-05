@@ -9,6 +9,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
     tools:context=".UI_Input_Control">
     <TextView
         android:id="@+id/ap"
@@ -18,10 +21,12 @@
         android:text="Academic Program"
         />
     <Spinner
-        android:id="@+id/students_spinner"
+        android:id="@+id/course_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true">
+    </Spinner>
+
 
     <TextView
         android:textSize="20sp"
@@ -111,7 +116,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <CheckBox
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:id="@+id/ORC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -119,21 +124,21 @@
         android:text="Original Report Card (Form 138)">
     </CheckBox>
     <CheckBox
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:id="@+id/NSO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ORC"
         android:text="NSO copy of Birth Certificate" />
     <CheckBox
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:id="@+id/CGMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/NSO"
         android:text="Certificate of Good Moral Character" />
     <CheckBox
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:id="@+id/CJHSC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

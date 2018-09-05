@@ -45,13 +45,17 @@ public class CourseAdapter extends ArrayAdapter<String> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
         String course = getItem(position);
+
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View CourseItemLayout = inflater.inflate(itemLayoutResource, parent, false);
 
-        TextView CourseTextView = convertView.findViewById(R.id.spinner);
-        CourseTextView.setText(course);
+        View courseItemLayout = inflater.inflate(itemLayoutResource, parent, false);
 
-        return CourseItemLayout;
+
+        TextView courseTextView = courseItemLayout.findViewById(R.id.name_textView);
+        courseTextView.setText(course);
+
+        return courseItemLayout;
     }
 }
